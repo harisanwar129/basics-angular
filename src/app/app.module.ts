@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 
+// material design
+ 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialDesign } from './admin/material/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +19,9 @@ import { RegisterComponent } from './auth/register/register.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialDesign
   ],
   providers: [],
   bootstrap: [AppComponent]
